@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/categorie-selected.css">
+    <title>Merchant</title>
+</head>
+<body>
+<header> 
+    <div class="head-links">
+        <p id="logo" onclick="location.href='index.html'">MERCHANT</p>
+
+        <nav>
+            <p onclick="location.href='vouchers.html'">Cupons de desconto</p>
+            <P onclick="location.href='brands.html'">Marcas</P>
+            <P onclick="location.href='feedbacks.html'">Feedbacks</P>
+            <P onclick="location.href='contact.html'">Entrar em contato</P>
+        </nav>
+        <div class="head-things">
+            <div class="call" onclick="location.href='contact.html'">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="icon-text">
+                    <p class="icon-txt">TELEFONE</p>
+                    <p class="phone">(00) 0000-0000</p>
+                </div>
+            </div>
+            <div class="cesta" onclick="location.href='cart.html'">
+                <div class="icon" onclick="location.href='cart.html'"><i class="fa-solid fa-basket-shopping" onclick="location.href='cart.html'">
+                </i>
+                </div>
+                <div class="icon-text">
+                    <p class="icon-txt" onclick="location.href='cart.html'">CARRINHO</p>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <div class="head-bar">
+        <div class="dropdown">
+            <div class="categories">
+                <span>CATEGORIAS</span>
+                <div class="caret"><i class="fa-solid fa-angle-down"></i></div>
+                <ul class="diver-down">
+                    <li onclick="location.href='smartphones.html'">Smartphones</li>
+                    <li onclick="location.href='smartwatches.html'">Smartwatches</li>
+                    <li onclick="location.href='chargers.html'">Carregadores</li>
+                    <li onclick="location.href='powerbanks.html'">Power Banks</li>
+                    <li onclick="location.href='pholders.html'">Suportes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">   
+                <div class="s-inside">
+                    <input type="text" name="" id="searchBar" onkeyup="filtrar()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>            
+                <ul id="productList"></ul>
+        </div>
+        <div class="wish" onclick="location.href='favorites.html'">
+            <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            <p id="wishName">FAVORITOS</p>
+        </div>
+    </div>
+</header>
+    <div class="products-section">
+        <h3>SUPORTES</h3>
+        <div class="product-selection">
+            <p class="our-selections" id="lastProducto">ULTIMOS</p>
+            <P class="our-selections activeTxt" id="allProducto">TODOS</P>
+            <p class="our-selections" id="offerProducto">OFERTAS</p>
+        </div>
+        <div class="products-container">
+            <div class="product acessorie charger pHolder" onclick="location.href='samsungHolder.html'">
+                <div class="prod-bg">
+                    <img src="img/acessories/sphonestand.avif" alt="" class="prod-img">
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                </div>
+                <p class="prod-name">Samsung Phone Holder</p>
+                <p class="price">R$539,00</p>
+            </div>
+            <div class="product acessorie charger pHolder" onclick="location.href='xiaomiHolder.html'">
+                <div class="prod-bg">
+                    <img src="img/acessories/xcarstand.png" alt="" class="prod-img">
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs activeStar"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                </div>
+                <p class="prod-name">Xiaomi Phone Holder</p>
+                <p class="price">R$259,90</p>
+            </div>
+        </div>
+        <div class="qualities">
+            <div class="quality">
+                <i class="fa-solid fa-rocket fa-xl"></i>
+                <div class="q-text">
+                    <h6>FRETE GRÁTIS</h6>
+                    <p>Pedidos acima de $500</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-clock-rotate-left fa-xl"></i>
+                <div class="q-text">
+                    <h6>SUPORTE 24/7</h6>
+                    <p>Sempre a disposição</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-money-bill fa-xl"></i>
+                <div class="q-text">
+                    <h6>GARANTIA DE REEMBOLSO</h6>
+                    <p>Em até 30 dias</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-trophy fa-xl"></i>
+                <div class="q-text">
+                    <h6>CAMPEÕES DE VENDA</h6>
+                    <p>Os produtos mais vendidos</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-gift fa-xl"></i>
+                <div class="q-text">
+                    <h6>PRESENTES E CUPONS</h6>
+                    <p>Em compras com cartão de crédito</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-section">
+        <h3>PRODUTOS DESTAQUE</h3>
+        <div class="featured-container">
+            <div class="featured" onclick="location.href='s24ultra.html'">
+                <div class="feat-img">
+                    <img src="img/phones/24ultra.png" alt="" id="eargear">
+                </div>
+                <div class="feat-desc">
+                    <div class="stars">
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                    </div>
+                    <h6>Galaxy S24 Ultra</h6>
+                    <p class="feat-label">
+                        O Galaxy S24 Ultra usa IA em muitos aplicativos. Por exemplo, a câmera usa o AI 
+                        Zoom para tirar fotos com zoom melhores. O Assistente de fotos usa IA para 
+                        preencher fundos e mover, redimensionar ou apagar objetos. O Tradução Simultânea 
+                        permite que você se comunique em outros idiomas por telefone.
+                    </p>
+                    <div class="discount">
+                        <p class="feat-price">R$5.790,00</p>
+                        <p class="old-price">(10.999,00)</p>
+                    </div>
+                    <div class="feat-icons">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="featured" onclick="location.href='RogCetra.html'">
+                <div class="feat-img">
+                    <img src="img/acessories/arogcetra.webp" alt="">
+                </div>
+                <div class="feat-desc">
+                    <div class="stars">
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                        <i class="fa-solid fa-star activeStar"></i>
+                    </div>
+                    <h6>Asus ROG Cetra TWS</h6>
+                    <p class="feat-label">
+                        Desfrute de graves potentes e agudos cristalinos através de alto-falantes 
+                        dinâmicos bidirecionais. Os Galaxy Buds2 oferecem qualidade de som premium que faz 
+                        você se sentir como se estivesse no palco com sua banda favorita. Ouça como se 
+                        você estivesse lá.
+                    </p>
+                    <div class="discount">
+                        <p class="feat-price">R$789,90</p>
+                        <p class="old-price">(947,90)</p>
+                    </div>
+                    <div class="feat-icons">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands-section">
+        <h3>PRINCIPAIS MARCAS</h3>
+        <div class="brands-container">
+            <div class="brand samsung"></div>
+            <div class="brand xiaomi"></div>
+            <div class="brand asus"></div>
+            <div class="brand huawei"></div>
+            <div class="brand moto"></div>
+        </div>
+    </div>
+<footer>
+    <div class="footer-container">
+        <div class="brand-info">
+            <p id="footerLogo">MERCHANT</p>
+            <p><mark>support@exemplo.com</mark></p>
+
+            <div class="foot-loc">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>30 Buttonwood St.Pataskala OH 43062</p>
+            </div>
+
+            <div class="foot-phone">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <p>(00) 00000-0000</p>
+            </div>
+
+            <div class="brand-socials">
+                <i class="icone-maior fa-brands fa-x-twitter"></i>
+                <i class="icone-maior fa-brands fa-instagram"></i>
+                <i class="icone-maior fa-brands fa-facebook-f"></i>
+                <i class="icone-maior fa-brands fa-youtube"></i>
+
+                <i class="icone-menor fa-brands fa-x-twitter fa-sm"></i>
+                <i class="icone-menor fa-brands fa-instagram fa-sm"></i>
+                <i class="icone-menor fa-brands fa-facebook-f fa-sm"></i>
+                <i class="icone-menor fa-brands fa-youtube fa-sm"></i>
+            </div>
+        </div>
+        <div class="foot-categories">
+            <h5 class="footSub">Categorias</h5>
+            <p onclick="location.href='pholders.html'">Acessórios</p>
+            <p onclick="location.href='smartphones.html'">Smartphones</p>
+            <p onclick="location.href='smartwatches.html'">Smartwatches</p>
+            <p onclick="location.href='chargers.html'">Carregadores</p>
+        </div>
+        <div class="foot-service">
+            <h5 class="footSub">Atendimento ao cliente</h5>
+            <p onclick="location.href='contact.html'">Entrar em contato</p>
+        </div>
+        <div class="foot-about">
+            <h5 class="footSub">Sobre nós</h5>
+            <p onclick="location.href='contact.html'">Entrar em contato</p>
+        </div>
+    </div>
+    <div class="foot-end">
+        <p id="watermark">© 2024 Merchant Digital Store</p>
+        <div class="card-flags">
+            <div class="flag master"></div>
+            <div class="flag visa"></div>
+            <div class="flag paypal"></div>
+            <div class="flag app-pay"></div>
+            <div class="flag goog-pay"></div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/categorie-selected.js" defer></script>
+</html>

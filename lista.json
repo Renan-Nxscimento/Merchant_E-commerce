@@ -1,0 +1,151 @@
+[{
+    "nome": "FGM-148-Javelin",
+    "id": "javelin.html",
+    "image": "img/javelin.png"
+},
+{
+    "nome": "Asus Rogphone 8",
+    "id": "RogPhone8.html",
+    "image": "img/phones/rphone9.png"
+},
+{
+    "nome": "Samsung Galaxy S23 Plus",
+    "id": "s23plus.html",
+    "image": "img/phones/23plus.png"
+},
+{
+    "nome": "Xiaomi Mi 14t Pro",
+    "id": "mi14tPro.html",
+    "image": "img/phones/x14tpro.webp"
+},
+{
+    "nome": "Samsung Galaxy S24 Ultra",
+    "id": "s24ultra.html",
+    "image": "img/phones/24ultra.png"
+},
+{
+    "nome": "Huawei P60 Pro",
+    "id": "p60Pro.html",
+    "image": "img/phones/hp60pro.webp"
+},
+{
+    "nome": "Motorola Edge 40",
+    "id": "edge40.html",
+    "image": "img/phones/medge40.png"
+},
+{
+    "nome": "Asus Zenfone 11 Ultra",
+    "id": "zenfone11Ultra.html",
+    "image": "img/phones/azenfone11ultra.png"
+},
+{
+    "nome": "Samsung Galaxy A55",
+    "id": "galaxyA55.html",
+    "image": "img/phones/sa55.webp"
+},
+{
+    "nome": "Asus Zenfone 9",
+    "id": "zenfone9.html",
+    "image": "img/phones/azenfone9.png"
+},
+{
+    "nome": "Motorola Moto G04S",
+    "id": "motoG04s.html",
+    "image": "img/phones/mmotog04s.png"
+},
+{
+    "nome": "Xiaomi Redmi 13C",
+    "id": "redmi13C.html",
+    "image": "img/phones/xredmi13c.webp"
+},
+{
+    "nome": "Samsung Galaxy Watch 7",
+    "id": "gWatch7.html",
+    "image": "img/watches/gwatch7.webp"
+},
+{
+    "nome": "Xiaomi Mi Band 9",
+    "id": "miBand9.html",
+    "image": "img/watches/mband9.png"
+},
+{
+    "nome": "Samsung Galaxy Watch FE",
+    "id": "gWatchFE.html",
+    "image": "img/watches/gwatchFE.webp"
+},
+{
+    "nome": "Samsung Galaxy Fit 3",
+    "id": "galaxyFit3.html",
+    "image": "img/watches/sgfit3.webp"
+},
+{
+    "nome": "Asus VivoWatch BP",
+    "id": "vivoWatchBP.html",
+    "image": "img/watches/sgfit3.webp"
+},
+{
+    "nome": "Huawei Band 9",
+    "id": "huaweiBand9.html",
+    "image": "img/watches/hband9.jpg"
+},
+{
+    "nome": "Asus VivoWatch SP",
+    "id": "vivoWatchSP.html",
+    "image": "img/watches/avivowatchSP.png"
+},
+{
+    "nome": "Xiaomi Redmi Watch 2",
+    "id": "redmiWatch2.html",
+    "image": "img/watches/rwatch2.png"
+},
+{
+    "nome": "Xiaomi Redmi Watch 3",
+    "id": "redmiWatch3.html",
+    "image": "img/watches/rwatch3.png"
+},
+{
+    "nome": "Asus ROG Cetra TWS",
+    "id": "RogCetra.html",
+    "image": "img/acessories/arogcetra.webp"
+},
+{
+    "nome": "Samsung Galaxy Buds 2",
+    "id": "galaxyBuds2.html",
+    "image": "img/acessories/sgbuds2.webp"
+},
+{
+    "nome": "Huawei FreeBuds 5i",
+    "id": "freeBuds5i.html",
+    "image": "img/acessories/hfreebuds5i.png"
+},
+{
+    "nome": "Samsung Phone Holder",
+    "id": "samsungHolder.html",
+    "image": "img/acessories/sphonestand.avif"
+},
+{
+    "nome": "Xiaomi Phone Holder",
+    "id": "xiaomiHolder.html",
+    "image": "img/acessories/xcarstand.png"
+},
+{
+    "nome": "Samsung Premium Charger",
+    "id": "premiumCharger.html",
+    "image": "img/acessories/scharger2.avif"
+},
+{
+    "nome": "Xiaomi HyperCharge 120w",
+    "id": "hyperCharge.html",
+    "image": "img/acessories/xhypervharge120.png"
+},
+{
+    "nome": "Asus ROG Gaming Charger Dock",
+    "id": "gamingDock.html",
+    "image": "img/acessories/agamingchargerdock.png"
+},
+{
+    "nome": "Xiaomi Mi Power Bank 3",
+    "id": "miPowerbank.html",
+    "image": "img/acessories/mipowerbk.png"
+}
+]

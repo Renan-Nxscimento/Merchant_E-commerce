@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Merchant</title>
+</head>
+<body>
+<header> 
+    <div class="head-links">
+        <p id="logo" onclick="location.href='index.html'">MERCHANT</p>
+
+        <nav>
+            <p onclick="location.href='vouchers.html'">Cupons de desconto</p>
+            <P onclick="location.href='brands.html'">Marcas</P>
+            <P onclick="location.href='feedbacks.html'">Feedbacks</P>
+            <P onclick="location.href='contact.html'">Entrar em contato</P>
+        </nav>
+        <div class="head-things">
+            <div class="call" onclick="location.href='contact.html'">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="icon-text">
+                    <p class="icon-txt">TELEFONE</p>
+                    <p class="phone">(00) 0000-0000</p>
+                </div>
+            </div>
+            <div class="cesta" onclick="location.href='cart.html'">
+                <div class="icon" onclick="location.href='cart.html'"><i class="fa-solid fa-basket-shopping" onclick="location.href='cart.html'">
+                </i>
+                </div>
+                <div class="icon-text">
+                    <p class="icon-txt" onclick="location.href='cart.html'">CARRINHO</p>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <div class="head-bar">
+        <div class="dropdown">
+            <div class="categories">
+                <span>CATEGORIAS</span>
+                <div class="caret"><i class="fa-solid fa-angle-down"></i></div>
+                <ul class="diver-down">
+                    <li onclick="location.href='smartphones.html'">Smartphones</li>
+                    <li onclick="location.href='smartwatches.html'">Smartwatches</li>
+                    <li onclick="location.href='chargers.html'">Carregadores</li>
+                    <li onclick="location.href='powerbanks.html'">Power Banks</li>
+                    <li onclick="location.href='pholders.html'">Suportes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">   
+                <div class="s-inside">
+                    <input type="text" name="" id="searchBar" onkeyup="filtrar()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>            
+                <ul id="productList"></ul>
+        </div>
+        <div class="wish" onclick="location.href='favorites.html'">
+            <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            <p id="wishName">FAVORITOS</p>
+        </div>
+    </div>
+</header>
+    <div class="items-section">
+        <h3>CARRINHO</h3>
+        <div class="items-container">
+            <div class="item" id="i-1">
+                <div class="i-image">
+                    <img src="img/javelin.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-2">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-3">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-4">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-5">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-6">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-7">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-8">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-9">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-10">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-11">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-12">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-13">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-14">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-15">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-16">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-17">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-18">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-19">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-20">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-21">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-22">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-23">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-24">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-25">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-26">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-27">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-28">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-29">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+
+            <div class="item" id="i-30">
+                <div class="i-image">
+                    <img src="img/snakeEater.png" alt="">
+                </div>
+                <div class="i-name">
+                    <span class="item-name">Snake Eater SOLID</span>
+                </div>
+                <div class="i-var">
+                    <span class="item-var">Bandana</span>
+                </div>
+                <div class="i-qnt">
+                    <button class="i-minus">-</button>
+                    <span class="item-qnt">7</span>
+                    <button class="i-plus">+</button>
+                </div>
+                <div class="i-price">
+                    <span class="item-price">l</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ship-section">
+        <div class="ship-container">
+            <div class="ship-calc">
+                <label for="shipCalc">Calcular frete:</label>
+                <input type="number" 
+                id="shipCalc" 
+                name="shipCalc"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
+                maxlength="8"
+                 placeholder="Digite seu CEP">
+                <input type="button" value="Calcular" id="calcBtn">
+            </div>
+            <div class="ship-price">
+                <div class="s-adress">
+                    <span id="sAdress"></span>
+                </div>
+                <div class="s-ship">
+                    <span>Valor do frete:<span class="shipValue"></span></span>
+                </div>
+            </div>
+            <div class="s-total">
+                <span>Produtos: <span id="itemsValue"></span></span>
+                <span>Frete: <span id="shippingValue"></span></span>
+                <div class="cart-total">
+                    <span id="totalText">Total:</span><span id="totalValue">R$0,00</span>
+                </div>
+            </div>
+        </div>
+        <div class="purchase">
+            <button id="buyBtn">FINALIZAR COMPRA</button>
+        </div>
+        <div class="fullscreenForm">
+            <div class="finish-purchase">
+                <div class="f-top">
+                    <div class="close-form">
+                        <span class="close-fullscreen">&times;</span>
+                    </div>
+                </div>
+                <div class="f-fakeform">
+                    <div class="form-part">
+                        <span class="fake-label">Nome:</span>
+                        <div class="fake-input">
+                            <span>Nome completo</span>
+                        </div>
+                        <span class="fake-label">CPF:</span>
+                        <div class="fake-input">
+                            <span>CPF</span>
+                        </div>
+                        <span class="fake-label">Telefone:</span>
+                        <div class="fake-input">
+                            <span>Telefone</span>
+                        </div>
+                        <span class="fake-label">Número do cartão:</span>
+                        <div class="fake-input">
+                            <span>Número do cartão:</span>
+                        </div>
+                        <span class="fake-label">Validade:</span>
+                        <div class="small-ones">
+                            <div class="fake-input-smaller">
+                                <span>Mês</span>
+                            </div>
+                            <div class="fake-input-smaller">
+                                <span>Ano</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-part">
+                        <div class="total-one">
+                            <span>Total dos produtos</span>
+                        </div>
+                        <div class="total-two">
+                            <span id="formTotal"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-ending">
+                    <span id="warning">ESTE CAMPO É APENAS PARA EXEMPLIFICAR UMA API DE COMPRA, NÃO É NECESSÁRIO INSERIR NEHUM DADO.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qualities-section">
+        <div class="qualities">
+            <div class="quality">
+                <i class="fa-solid fa-rocket fa-xl"></i>
+                <div class="q-text">
+                    <h6>FRETE GRÁTIS</h6>
+                    <p>Pedidos acima de $500</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-clock-rotate-left fa-xl"></i>
+                <div class="q-text">
+                    <h6>SUPORTE 24/7</h6>
+                    <p>Sempre a disposição</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-money-bill fa-xl"></i>
+                <div class="q-text">
+                    <h6>GARANTIA DE REEMBOLSO</h6>
+                    <p>Em até 30 dias</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-trophy fa-xl"></i>
+                <div class="q-text">
+                    <h6>CAMPEÕES DE VENDA</h6>
+                    <p>Os produtos mais vendidos</p>
+                </div>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-gift fa-xl"></i>
+                <div class="q-text">
+                    <h6>PRESENTES E CUPONS</h6>
+                    <p>Em compras com cartão de crédito</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-container">
+        <div class="brand-info">
+            <p id="footerLogo">MERCHANT</p>
+            <p><mark>support@exemplo.com</mark></p>
+
+            <div class="foot-loc">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>30 Buttonwood St.Pataskala OH 43062</p>
+            </div>
+
+            <div class="foot-phone">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <p>(00) 00000-0000</p>
+            </div>
+
+            <div class="brand-socials">
+                <i class="icone-maior fa-brands fa-x-twitter"></i>
+                <i class="icone-maior fa-brands fa-instagram"></i>
+                <i class="icone-maior fa-brands fa-facebook-f"></i>
+                <i class="icone-maior fa-brands fa-youtube"></i>
+
+                <i class="icone-menor fa-brands fa-x-twitter fa-sm"></i>
+                <i class="icone-menor fa-brands fa-instagram fa-sm"></i>
+                <i class="icone-menor fa-brands fa-facebook-f fa-sm"></i>
+                <i class="icone-menor fa-brands fa-youtube fa-sm"></i>
+            </div>
+        </div>
+        <div class="foot-categories">
+            <h5 class="footSub">Categorias</h5>
+            <p onclick="location.href='pholders.html'">Acessórios</p>
+            <p onclick="location.href='smartphones.html'">Smartphones</p>
+            <p onclick="location.href='smartwatches.html'">Smartwatches</p>
+            <p onclick="location.href='chargers.html'">Carregadores</p>
+        </div>
+        <div class="foot-service">
+            <h5 class="footSub">Atendimento ao cliente</h5>
+            <p onclick="location.href='contact.html'">Entrar em contato</p>
+        </div>
+        <div class="foot-about">
+            <h5 class="footSub">Sobre nós</h5>
+            <p onclick="location.href='contact.html'">Entrar em contato</p>
+        </div>
+    </div>
+    <div class="foot-end">
+        <p id="watermark">© 2024 Merchant Digital Store</p>
+        <div class="card-flags">
+            <div class="flag master"></div>
+            <div class="flag visa"></div>
+            <div class="flag paypal"></div>
+            <div class="flag app-pay"></div>
+            <div class="flag goog-pay"></div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/cart.js" defer></script>
+</html>
