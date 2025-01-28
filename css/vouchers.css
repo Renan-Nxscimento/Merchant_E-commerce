@@ -549,6 +549,10 @@ nav {
     outline: 1px solid rgb(243, 97, 0);
 }
 
+.activeStar {
+    color: rgb(255, 197, 73);
+}
+
 .feat-img {
     display: flex;
     justify-content: center;
