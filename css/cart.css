@@ -1518,6 +1518,10 @@ footer i{
         width: 100%;
     }
 
+    .f-ending {
+        font-size: 12px
+    }
+
     .flag {
         width: 40px;
         height: 20px;
