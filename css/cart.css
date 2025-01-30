@@ -1518,8 +1518,8 @@ footer i{
         width: 100%;
     }
 
-    .f-ending {
-        font-size: 12px
+    #warning {
+        font-size: 12px;
     }
 
     .flag {
